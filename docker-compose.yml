@@ -22,6 +22,8 @@ services:
   php-app:
     build: ./php-app
     container_name: php_app
+    # deploy:
+    #   replicas: 2
     ports:
       - "8080:8080"
     environment:
